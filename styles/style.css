@@ -53,3 +53,22 @@ h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+/*Variáveis CSS*/
+:root {
+    /*Paleta de Cores*/
+    --background-color: oklch(20.8% 0.040 265.8);
+    --surfaces-color: oklch(27.9% 0.037 260.0);
+    --borders-color: oklch(37.2% 0.039 257.3);
+    --primary-color: oklch(58.5% 0.204 277.1);
+    --primary-accent-color: oklch(68.0% 0.158 276.9);
+    --primary-text-color: oklch(98.4% 0.003 247.9);
+    --secondary-text-color: oklch(71.1% 0.035 256.8);
+
+    /*Tamanhos de fontes*/
+    --xtra-large: 5rem;
+    --large: 3rem;
+    --medium: 2rem;
+    --small: 1.5rem;
+    --xtra-small: 0.8rem;
+}
