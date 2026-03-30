@@ -54,6 +54,22 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+/*Reset de CSS próprio*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
 /*Variáveis CSS*/
 :root {
     /*Paleta de Cores*/
@@ -69,7 +85,7 @@ h1, h2, h3, h4, h5, h6 {
     --xtra-large: 5rem;
     --large: 3rem;
     --medium: 2rem;
-    --small: 1.5rem;
+    --small: 1rem;
     --xtra-small: 0.8rem;
 }
 
@@ -81,3 +97,79 @@ body {
 h1, h2, h3 {
     font-family: "Syne", sans-serif;
 }
+
+/*Estilização CSS*/
+body {
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+}
+
+header {
+    background-color: var(--surfaces-color);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 2px solid var(--borders-color);
+
+    padding: 0 20px;
+}
+
+.nav-list {
+    color: var(--secondary-text-color);
+
+    display: flex;
+    gap: 8px;
+}
+
+.nav-link {
+    padding: 2px 4px;
+    border-radius: 8px;
+
+    transition: background-color 250ms ease;
+}
+
+.nav-link:hover {
+    background-color: var(--primary-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.main-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.hero-left {
+    max-width: 550px;
+}
+
+.hero-highlight {
+    font-size: var(--large);
+}
+
+.hero-text {
+    color: var(--secondary-text-color);
+    font-size: var(--small);
+}
+
+.hero-img img{
+    height: 300px;
+    width: 550px;
+
+    border-radius: 10px;
+}
+
+
