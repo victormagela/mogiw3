@@ -117,7 +117,7 @@ header {
 
     border-bottom: 2px solid var(--borders-color);
 
-    padding: 0 20px;
+    padding: 8px 20px;
 }
 
 .nav-list {
@@ -142,6 +142,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap: 20px;
 }
 
 .main-hero {
@@ -287,5 +288,25 @@ main {
     color: var(--primary-color);
 }
 
+footer {
+    background-color: var(--surfaces-color);
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 2px solid var(--borders-color);
+    
+    padding: 20px 12px;
+}
+
+footer>h1 {
+    color: var(--primary-color);
+    font-size: var(--medium);
+}
+
+footer>p {
+    color: var(--secondary-text-color);
+    font-size: var(--small);
+}
 
