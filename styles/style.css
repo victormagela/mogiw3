@@ -72,3 +72,12 @@ h1, h2, h3, h4, h5, h6 {
     --small: 1.5rem;
     --xtra-small: 0.8rem;
 }
+
+/*Fontes*/
+body {
+    font-family: "Inter", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Syne", sans-serif;
+}
