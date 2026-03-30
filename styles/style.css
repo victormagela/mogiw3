@@ -82,11 +82,9 @@ a {
     --secondary-text-color: oklch(71.1% 0.035 256.8);
 
     /*Tamanhos de fontes*/
-    --xtra-large: 5rem;
-    --large: 3rem;
-    --medium: 2rem;
-    --small: 1rem;
-    --xtra-small: 0.8rem;
+    --xtra-large: 3rem;
+    --large: 2rem;
+    --medium: 1rem;
 }
 
 /*Fontes*/
@@ -147,22 +145,37 @@ main {
 }
 
 .main-hero {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 20px;
 }
 
 .hero-left {
     max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
 }
 
 .hero-highlight {
-    font-size: var(--large);
+    font-size: var(--xtra-large);
 }
 
 .hero-text {
     color: var(--secondary-text-color);
-    font-size: var(--small);
+    font-size: var(--medium);
+}
+
+.cont-link {
+    background-color: var(--primary-color);
+
+    padding: 6px 18px;
+
+    border: none;
+    border-radius: 10px;
 }
 
 .hero-img img{
