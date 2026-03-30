@@ -85,6 +85,7 @@ a {
     --xtra-large: 3rem;
     --large: 2rem;
     --medium: 1rem;
+    --small: 0.8rem;
 }
 
 /*Fontes*/
@@ -178,11 +179,56 @@ main {
     border-radius: 10px;
 }
 
+.cont-link:hover {
+    background-color: var(--primary-accent-color);
+}
+
 .hero-img img{
     height: 300px;
     width: 550px;
 
     border-radius: 10px;
+}
+
+.main-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+}
+
+.service-card {
+    min-width: 250px;
+    background-color: var(--surfaces-color);
+
+    padding: 20px;
+    border-top: 3px solid var(--primary-accent-color);
+    border-radius: 10px;
+
+    transition: 
+        transform 250ms ease,
+        box-shadow 250ms ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        0 -6px 12px var(--primary-accent-color),
+        0 -10px 17px var(--primary-color);
+}
+
+.service-icon {
+    height: var(--large);
+    width: var(--large);
+
+    fill: var(--primary-accent-color);
+}
+
+.service-card>p {
+    font-size: var(--small);
+
+    color: var(--secondary-text-color);
 }
 
 
