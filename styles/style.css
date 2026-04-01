@@ -314,4 +314,39 @@ footer>p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
+    place-items: center;
+    row-gap: 20px;
+}
+
+.main-title {
+    grid-area: 1 / 1 / span 1 / span 1;
+
+    font-size: var(--large);
+}
+
+.display-btns {
+    grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.display-btns button {
+    background-color: var(--surfaces-color);
+
+    border: 1px solid var(--borders-color);
+    border-radius: 2px;
+    padding: 4px;
+
+    cursor: pointer;
+}
+
+.service-container{
+    grid-area: 2 / 1 / span 1 / span 2;
+}
+
+.cards {
+    width: min(100%, 1200px);
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    place-items: center;
+    gap: 20px;
 }
