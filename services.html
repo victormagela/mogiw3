@@ -44,9 +44,7 @@
             </button>
         </div>
 
-        <div class="service-container cards" id="service-container">
-            Placeholder
-        </div>
+        <div class="service-container cards" id="service-container"></div>
     </main>
 
     <footer>
@@ -86,11 +84,46 @@
         const cardBtn = document.getElementById("cards");
         const listBtn = document.getElementById("list");
 
-        const cardStrategy = (item) => {
-            serviceContainer.classList.remove();
+        const renderDisplay = (data, strategy) => {
+            serviceContainer.className = "";
+            serviceContainer.replaceChildren();
 
-            serviceContainer.classList.add("service-container", "cards");
+            data.forEach(item => {
+                const element = strategy(item);
+                serviceContainer.appendChild(element);
+            });
         }
+
+        const cardStrategy = (item) => {
+            serviceContainer.classList.add("service-container", "cards");
+
+            const div = document.createElement("div");
+            const title = document.createElement("h3");
+            const description = document.createElement("p");
+            const link = document.createElement("a");
+
+            div.classList.add("service-card");
+            title.textContent = item.title;
+            description.textContent = item.description;
+            link.textContent = "Mais informações";
+            link.classList.add("cont-link");
+            link.style.display = "block";
+            link.style.marginTop = "12px";
+            div.append(title, description, link);
+
+            return div;
+        }
+
+        const strategies = {
+            card: cardStrategy
+        };
+
+        cardBtn.addEventListener("click", () => {
+            renderDisplay(services, strategies["card"])
+        })
+
+        renderDisplay(services, strategies["card"]);
+
     </script>
 </body>
 </html>
