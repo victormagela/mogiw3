@@ -235,7 +235,8 @@ header {
     fill: var(--primary-accent-color);
 }
 
-.service-card>p {
+.service-card>p,
+.wrapper>p {
     font-size: var(--small);
 
     color: var(--secondary-text-color);
@@ -351,6 +352,5 @@ footer>p {
 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    place-items: center;
     gap: 20px;
 }
