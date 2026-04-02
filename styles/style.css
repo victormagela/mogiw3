@@ -165,6 +165,10 @@ header {
     font-size: var(--xtra-large);
 }
 
+.highlight-word {
+    color: var(--primary-color);
+}
+
 .hero-text {
     color: var(--secondary-text-color);
     font-size: var(--medium);
