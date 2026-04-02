@@ -44,7 +44,7 @@
             </button>
         </div>
 
-        <div class="service-container cards" id="service-container"></div>
+        <div id="service-container"></div>
     </main>
 
     <footer>
@@ -95,6 +95,7 @@
         }
 
         const cardStrategy = (item) => {
+            listBtn.classList.remove("active");
             serviceContainer.classList.add("service-container", "cards");
             cardBtn.classList.add("active");
 
@@ -125,13 +126,47 @@
             return div;
         }
 
+        const listStrategy = (item) => {
+            cardBtn.classList.remove("active");
+            serviceContainer.classList.add("service-container", "list");
+            listBtn.classList.add("active");
+
+            const div = document.createElement("div");
+            const textWrapper = document.createElement("div");
+            const title = document.createElement("h3");
+            const description = document.createElement("p");
+            const link = document.createElement("a");
+
+            div.classList.add("service-item");
+
+            title.textContent = item.title;
+            description.textContent = item.description;
+            textWrapper.className = "wrapper";
+            textWrapper.style.maxWidth = "55ch";
+            textWrapper.append(title, description);
+
+            link.textContent = "Mais informações";
+            link.classList.add("cont-link");
+            link.style.textAlign = "center";
+            link.style.margin = "auto 0";
+
+            div.append(textWrapper, link);
+
+            return div;
+        }
+
         const strategies = {
-            card: cardStrategy
+            card: cardStrategy,
+            list: listStrategy
         };
 
         cardBtn.addEventListener("click", () => {
             renderDisplay(services, strategies["card"])
-        })
+        });
+
+        listBtn.addEventListener("click", () => {
+            renderDisplay(services, strategies["list"])
+        });
 
         renderDisplay(services, strategies["card"]);
 

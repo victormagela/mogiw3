@@ -7,10 +7,24 @@ Projeto para faculdade, desenvolvimento de um website para a empresa fícticia, 
 - Criação de sites, apps, E-Commerce, SEO.
 
 # Estrutura
+- Header com logo da empresa e menu de navegação, e footer com nome da empresa e copyright em todas as páginas
 - 5 páginas
 - Home: Hero Section chamativo, uma breve descrição dos serviços oferecidos, um CTA, e um footer
-- Serviços: Cards com os serviços oferecidos organizados em um grid visual
+- Serviços: Cards com os serviços oferecidos organizados em um grid visual, permitindo ao usuário escolher entre visualiação em cards ou em lista. Botões com opção de troca entre elas criados com interatividade de JS.
 - Portfolio: Galeria de projetos fícticios com descrições e imagens, filtro com JS
 - Blog/Notícias: Artigos sobre tecnologia, novidades da área, notícias sobre a empresa
 - Sobre: Breve portfolio pessoal e resumido do desenvolvedor; apresentação profissional, conhecimentos técnicos, interesses, foto, contato
 - Páginas serão acessadas via um menu lateral que em dispositivos mobilo irá colapsar em um menu hambúrguer
+
+
+# Página Home
+- Concluída.
+- Hero responsivo com imagem, textos, e um botão que na verdade é um link com fundo animado em gradiente.
+- Seção com cards de serviços, descrevendo resumidamente alguns dos serviços oferecidos pela empresa.
+- Seção CTA com fundo gradiente.
+
+# Página Serviços
+- Concluída.
+- Feita com Grid que separa em duas linhas, a primeira contendo o título da seção e botões que controlam como o conteúdo da página é exibido.
+- Seção de conteúdo que disponibiliza todos os serviços da empresa, com descrição e um botão que direto ao contato com a empresa semelhante ao botão no Hero da primeira página.
+- Essa seção pode ser visualizada em forma de cards, cada serviço sendo um card, ou como uma lista empilhada.

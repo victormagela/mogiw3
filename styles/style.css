@@ -335,7 +335,7 @@ footer>p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
-    place-items: center;
+    justify-items: center;
     row-gap: 20px;
 }
 
@@ -360,8 +360,9 @@ footer>p {
     cursor: pointer;
 }
 
-.service-container{
+.service-container {
     grid-area: 2 / 1 / span 1 / span 2;
+    align-self: start;
 }
 
 .cards {
@@ -370,6 +371,20 @@ footer>p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+}
+
+.list {
+    width: 100%;
+}
+
+.service-item {
+    background-color: var(--surfaces-color);
+    border-top: 3px solid var(--primary-accent-color);
+
+    display: flex;
+    justify-content: space-around;
+
+    padding: 20px;
 }
 
 .display-btns .active {
