@@ -382,6 +382,8 @@ footer>p {
     border-top: 3px solid var(--primary-accent-color);
 
     display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
     justify-content: space-around;
 
     padding: 20px;

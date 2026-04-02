@@ -14,7 +14,7 @@ Projeto para faculdade, desenvolvimento de um website para a empresa fícticia, 
 - Portfolio: Galeria de projetos fícticios com descrições e imagens, filtro com JS
 - Blog/Notícias: Artigos sobre tecnologia, novidades da área, notícias sobre a empresa
 - Sobre: Breve portfolio pessoal e resumido do desenvolvedor; apresentação profissional, conhecimentos técnicos, interesses, foto, contato
-- Páginas serão acessadas via um menu lateral que em dispositivos mobilo irá colapsar em um menu hambúrguer
+- Páginas serão acessadas via um menu no header das páginas.
 
 
 # Página Home
