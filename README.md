@@ -11,7 +11,7 @@ Projeto para faculdade, desenvolvimento de um website para a empresa fícticia, 
 - 5 páginas
 - Home: Hero Section chamativo, uma breve descrição dos serviços oferecidos, um CTA, e um footer
 - Serviços: Cards com os serviços oferecidos organizados em um grid visual, permitindo ao usuário escolher entre visualiação em cards ou em lista. Botões com opção de troca entre elas criados com interatividade de JS.
-- Portfolio: Galeria de projetos fícticios com descrições e imagens, filtro com JS
+- Carreira: Informações a respeito de candidatura para trabalhar para a empresa
 - Blog/Notícias: Artigos sobre tecnologia, novidades da área, notícias sobre a empresa
 - Sobre: Breve portfolio pessoal e resumido do desenvolvedor; apresentação profissional, conhecimentos técnicos, interesses, foto, contato
 - Páginas serão acessadas via um menu no header das páginas.
