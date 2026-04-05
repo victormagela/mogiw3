@@ -51,19 +51,17 @@
     </footer>
 
     <dialog class="form-dialog" id="form-dialog">
-        <div class="dialog-content">
-            <div class="dialog-header">
-                <h3>Venha fazer parte da MogiW3!</h3>
+        <button type="button" class="close-btn" id="close" aria-label="fechar caixa de diálogo">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>fechar</title><path d="M20 6.91L17.09 4L12 9.09L6.91 4L4 6.91L9.09 12L4 17.09L6.91 20L12 14.91L17.09 20L20 17.09L14.91 12L20 6.91Z" /></svg>
+        </button>
 
-                <button type="button" id="close" aria-label="fechar caixa de diálogo">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>close-thick</title><path d="M20 6.91L17.09 4L12 9.09L6.91 4L4 6.91L9.09 12L4 17.09L6.91 20L12 14.91L17.09 20L20 17.09L14.91 12L20 6.91Z" /></svg>
-                </button>
-            </div>
+        <div class="dialog-content">
+            <h3 class="dialog-heading">Venha fazer parte da <span class="highlight-word">MogiW3</span>!</h3>
 
             <form method="dialog" class="form">
                 <div class="form-entry">
                     <label for="full-name">Nome Completo *</label>
-                    <input type="text" name="full-name" required>
+                    <input autofocus type="text" name="full-name" required>
                 </div>
 
                 <div class="form-entry">
@@ -103,6 +101,12 @@
 
         closeBtn.addEventListener("click", () => {
             formDialog.close();
+        });
+
+        formDialog.addEventListener("click", (e) => {
+            if (e.target === formDialog) {
+                formDialog.close();
+            }
         });
     </script>
 </body>

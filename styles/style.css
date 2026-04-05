@@ -492,12 +492,96 @@ footer>p {
 
 .form-dialog {
     margin: auto;
+    background-color: var(--surfaces-color);
+    border: 2px solid var(--borders-color);
+    border-radius: 10px;
+    outline: none;
+    
+    &::backdrop {
+        background-color: oklch(0 0 0 / 0.1);
+        backdrop-filter: blur(3px);
+    }
 
-    padding: 2rem;
+    &:focus {
+        outline: none;
+        border: 3px solid var(--primary-accent-color)
+    }
+
+    .close-btn {
+        display: block;
+        margin-left: auto;
+
+        background-color: transparent;
+        border: none;
+        color: var(--primary-color);
+
+        &:focus {
+            outline: none;
+            border: 2px solid var(--primary-accent-color);
+        }
+    }
+
+    .dialog-content {
+        display: grid;
+        grid-template-rows: auto 1fr;
+
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    .dialog-heading {
+        font-size: var(--large);
+        color: var(--primary-text-color);
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .form-entry {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-entry label {
+        font-size: var(--small);
+        color: var(--secondary-text-color);
+    }
+
+    .form-entry input {
+        font-weight: bold;
+
+        padding: 0.5rem;
+
+        &:focus {
+        outline: none;
+        border: 3px solid var(--primary-accent-color)
+        }
+    }
+
+    .form button {
+        background-color: var(--primary-color);
+        color: var(--primary-text-color);
+        font-size: var(--large);
+
+        padding: 0.5rem 1rem;
+
+        border: none;
+        border-radius: 10px;
+
+        transition: background-color 300ms ease;
+
+        &:focus {
+            outline: none;
+            border: 3px solid var(--primary-accent-color);
+        }
+
+        &:hover,
+        &:active {
+            background-color: var(--primary-accent-color);
+        } 
+    }
 }
 
-.form-dialog::backdrop {
-    background-color: oklch(0 0 0 / 0.5);
-    backdrop-filter: blur(3px);
-}
 
