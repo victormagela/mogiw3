@@ -69,6 +69,10 @@ a {
     color: inherit;
 }
 
+button {
+    cursor: pointer;
+}
+
 
 /*Variáveis CSS*/
 :root {
@@ -425,6 +429,7 @@ footer>p {
 
         border: none;
         border-radius: 10px;
+        outline: none;
 
         background-color: transparent;
         color: var(--secondary-text-color);
@@ -484,3 +489,15 @@ footer>p {
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+
+.form-dialog {
+    margin: auto;
+
+    padding: 2rem;
+}
+
+.form-dialog::backdrop {
+    background-color: oklch(0 0 0 / 0.5);
+    backdrop-filter: blur(3px);
+}
+
