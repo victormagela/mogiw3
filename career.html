@@ -44,6 +44,41 @@
             </div>
 
         </div>
+
+        <dialog class="form-dialog" id="form-dialog" open>
+            <form method="dialog" class="form">
+                <div class="form-entry">
+                    <label for="full-name">Nome Completo *</label>
+                    <input type="text" name="full-name" required>
+                </div>
+
+                <div class="form-entry">
+                    <label for="email">Email *</label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div class="form-entry">
+                    <label for="tel">Telefone *</label>
+                    <input type="tel" name="tel" required>
+                </div>
+
+                <div class="form-entry">
+                    <label for="birth-date">Data de Nascimento *</label>
+                    <input type="date" name="birth-date" required>
+                </div>
+                
+                <div class="form-entry">
+                    <label for="file">Cúrriculo *</label>
+                    <input type="file" name="file" required>
+                </div>
+
+                <div class="action">
+                    <button type="submit" value="confirmed">Enviar</button>
+                    <button type="button" id="cancel-button">Cancelar</button>
+                </div>
+
+            </form>
+        </dialog>
     </main>
 
     <footer>
