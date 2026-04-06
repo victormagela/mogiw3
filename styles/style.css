@@ -588,16 +588,26 @@ footer>p {
     position: absolute;
     top: 24px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-150%);
 
     border: none;
     border-radius: 10px;
 
+    opacity: 0;
     background-color: oklch(68% 0.158 276.9 / 0.8);
     color: var(--primary-text-color);
 
-    font-size: var(--large);
+    font-size: var(--medium);
 
-    max-width: 35ch;
-    padding: 0.25rem 0.5rem;
+    max-width: 50ch;
+    padding: 1em 1.5em;
+
+    transition: 
+        opacity 300ms ease,
+        transform 300ms ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(-50%);
 }

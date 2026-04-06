@@ -126,10 +126,25 @@
             document.body.appendChild(notificationDialog);
 
             notificationDialog.show();
+
+            requestAnimationFrame(() => {
+                notificationDialog.classList.add("visible");
+            })
+
+            const duration = 4000;
+
             setTimeout(() => {
-                notificationDialog.close();
-                notificationDialog.remove();
-            }, 3000);
+                closeNotification(notificationDialog)
+            }, duration);
+        }
+
+        function closeNotification(dialog) {
+            dialog.classList.remove("visible");
+
+            dialog.addEventListener("transitionend", () => {
+                dialog.close();
+                dialog.remove();
+            });
         }
     </script>
 </body>
