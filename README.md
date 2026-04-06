@@ -28,3 +28,10 @@ Projeto para faculdade, desenvolvimento de um website para a empresa fícticia, 
 - Feita com Grid que separa em duas linhas, a primeira contendo o título da seção e botões que controlam como o conteúdo da página é exibido.
 - Seção de conteúdo que disponibiliza todos os serviços da empresa, com descrição e um botão que direto ao contato com a empresa semelhante ao botão no Hero da primeira página.
 - Essa seção pode ser visualizada em forma de cards, cada serviço sendo um card, ou como uma lista empilhada.
+
+# Página Carreiras
+- Concluída.
+- Propõe ao usuário se candidatar à uma vaga na empresa com título e texto chamativos.
+- Botão que abre o modal do formulário feito com borda animada usando pseudoelementos
+- Modal quando abre escurece ligeiramente a tela ao redor e aplica um efeito de blur nos elementos, trava o usuário dentro dele. Feito com acessibilidade em mente, com autofocus e bordas que mostram o elemento focalizado para usuários de teclado, o botão de fechar janela possui um Aria Label que traduz a intenção deste para usuário de leitores de tela. O modal em si pode ser fechado a qualquer momento a tecla ESC ou clicando em qualquer parte fora do formulário.
+- Pensando em UX, quando submetido o formulário, uma mensagem de confirmação aparece como "toaster" comunicando que o formulário foi enviado com sucesso. Esta notificação possui uma animação de entrada e saída, e tempo de vida curto até ser retirada da árvore de elementos.
