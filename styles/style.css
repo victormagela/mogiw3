@@ -178,7 +178,8 @@ header {
     font-size: var(--medium);
 }
 
-.cont-link {
+.cont-link,
+.article-link {
     background: linear-gradient(270deg, var(--primary-color), var(--primary-accent-color), var(--primary-color));
     background-size: 300% 300%;
     animation: gradmove 4s ease infinite;
@@ -611,3 +612,59 @@ footer>p {
     opacity: 1;
     transform: translateX(-50%);
 }
+
+.blog {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    gap: 24px;
+
+    .blog-title {
+        grid-row: 1 / span 1;
+
+        font-size: var(--large);
+    }
+
+    .divider {
+        grid-row: 2 / span 1;
+    }
+
+    .blog-text {
+        grid-row: 3 / span 1;
+    }
+
+    .highlight-article {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+}
+
+.article-content {
+    max-width: 55ch;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.article-title {
+    font-size: var(--large);
+}
+
+.article-text {
+    color: var(--secondary-text-color);
+}
+
+.article-link {
+    align-self: flex-start;
+}
+
+.article-img img {
+    max-height: 250px;
+    max-width: 500px;
+}
+
+
+
