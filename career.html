@@ -119,17 +119,8 @@
         function showNotification(message) {
             const notificationDialog = document.createElement("dialog");
 
-            notificationDialog.style.padding = "0.25rem 0.5rem";
-            notificationDialog.style.position = "absolute";
-            notificationDialog.style.top = "24px";
-            notificationDialog.style.left = "50%";
-            notificationDialog.style.transform = "translateX(-50%)";
-            notificationDialog.style.border = "none";
-            notificationDialog.style.borderRadius = "10px";
-            notificationDialog.style.backgroundColor = "oklch(68.0% 0.158 276.9 / 0.8)";
-            notificationDialog.style.color = "var(--primary-text-color) / 50%";
-            notificationDialog.style.fontSize = "var(--large)";
-            notificationDialog.style.maxWidth = "35ch";
+            notificationDialog.classList.add("notification");
+            
             notificationDialog.textContent = message;
             
             document.body.appendChild(notificationDialog);

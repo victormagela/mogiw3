@@ -584,4 +584,20 @@ footer>p {
     }
 }
 
+.notification {
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    transform: translateX(-50%);
 
+    border: none;
+    border-radius: 10px;
+
+    background-color: oklch(68% 0.158 276.9 / 0.8);
+    color: var(--primary-text-color);
+
+    font-size: var(--large);
+
+    max-width: 35ch;
+    padding: 0.25rem 0.5rem;
+}
