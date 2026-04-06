@@ -58,7 +58,7 @@
         <div class="dialog-content">
             <h3 class="dialog-heading">Venha fazer parte da <span class="highlight-word">MogiW3</span>!</h3>
 
-            <form method="dialog" class="form">
+            <form method="dialog" class="form" id="form">
                 <div class="form-entry">
                     <label for="full-name">Nome Completo *</label>
                     <input autofocus type="text" name="full-name" required>
@@ -93,6 +93,7 @@
     <script>
         const openBtn = document.getElementById("open");
         const formDialog = document.getElementById("form-dialog");
+        const form = document.getElementById("form");
         const closeBtn = document.getElementById("close");
 
         openBtn.addEventListener("click", () => {
@@ -109,10 +110,10 @@
             }
         });
 
-        formDialog.addEventListener("submit", (e) => {
-            // if (formDialog.returnValue === "confirmed") {
+        form.addEventListener("submit", (e) => {
+            if (e.submitter.value === "confirmed") {
                 showNotification("Formulário enviado com sucesso! Entraremos em contato pelo email cadastrado.");
-            // }
+            }
         });
 
         function showNotification(message) {
