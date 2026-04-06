@@ -663,9 +663,23 @@ footer>p {
     align-self: flex-start;
 }
 
+.article-img {
+    position: relative;
+}
+
 .article-img img {
     height: 250px;
     max-width: 500px;
+}
+
+.img-caption {
+    position: absolute;
+    inset: 0;
+
+    height: fit-content;
+
+    background-color: oklch(0 0 0 / 0.6);
+    color: var(--secondary-text-color);
 }
 
 .other-articles {

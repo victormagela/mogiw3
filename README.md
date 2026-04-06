@@ -35,3 +35,11 @@ Projeto para faculdade, desenvolvimento de um website para a empresa fícticia, 
 - Botão que abre o modal do formulário feito com borda animada usando pseudoelementos
 - Modal quando abre escurece ligeiramente a tela ao redor e aplica um efeito de blur nos elementos, trava o usuário dentro dele. Feito com acessibilidade em mente, com autofocus e bordas que mostram o elemento focalizado para usuários de teclado, o botão de fechar janela possui um Aria Label que traduz a intenção deste para usuário de leitores de tela. O modal em si pode ser fechado a qualquer momento a tecla ESC ou clicando em qualquer parte fora do formulário.
 - Pensando em UX, quando submetido o formulário, uma mensagem de confirmação aparece como "toaster" comunicando que o formulário foi enviado com sucesso. Esta notificação possui uma animação de entrada e saída, e tempo de vida curto até ser retirada da árvore de elementos.
+
+# Página Notícias
+- Concluída.
+- Apresenta um título para a página, uma divisão em gradiente para o conteúdo, uma breve explicação da página seguida pelo conteúdo principal.
+- Conteúdo da página é dividido em uma notícia/post em destaque, seguido por demais postagens que são agrupadas em um flexbox.
+- Página responsiva, colapsando as colunas em linhas em dispositivos com as telas menores.
+- As imagens possuem caption que se sobrepõe às imagens por meio de posicionamento absoluto.
+- Os links disfarçados de botões seguem o mesmo padrão de gradiente animado do restante do website.
