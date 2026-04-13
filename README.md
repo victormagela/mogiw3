@@ -43,3 +43,5 @@ Projeto para faculdade, desenvolvimento de um website para a empresa fícticia, 
 - Página responsiva, colapsando as colunas em linhas em dispositivos com as telas menores.
 - As imagens possuem caption que se sobrepõe às imagens por meio de posicionamento absoluto.
 - Os links disfarçados de botões seguem o mesmo padrão de gradiente animado do restante do website.
+- Inseri os artigo em cards semelhantes aos presentes em páginas anteriores, porém estes não possuem nenhum efeito hover.
+- Utilizei media queries, flexbox e grid para melhorar a responsividade da página.
