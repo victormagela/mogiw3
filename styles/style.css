@@ -619,7 +619,7 @@ footer>p {
     grid-template-rows: repeat(5, auto);
     gap: 24px;
 
-    padding: 0 20px;
+    padding: 20px;
 
     .blog-title {
         grid-row: 1 / span 1;
