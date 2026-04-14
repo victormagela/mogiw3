@@ -345,6 +345,8 @@ footer>p {
     grid-template-rows: auto 1fr;
     justify-items: center;
     row-gap: 24px;
+
+    padding: 20px 0;
 }
 
 .main-title {
