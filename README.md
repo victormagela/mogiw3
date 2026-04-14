@@ -50,3 +50,4 @@ Projeto para faculdade, desenvolvimento de um website para a empresa fícticia, 
 - Utiliza grid na seção principal da página para o layout. Código CSS utilizando técnica de aninhamento para melhor organização.
 - Seção Hero desta página contém: foto do desenvolvedor, nome, stack, breve descrição, um badge indicando disponibilidade para projetos, e links para GitHub e LinkedIn.
 - Aplica media querie que transforma o Grid Layout em um Flexbox para telas menores que 860 pixels, e manipula a ordem de cada elementos para melhor posicionamento no novo layout.
+- Cria CSS Grid para as seções de conhecimentos técnicos e Interesses da página; o conteúdo destas é separado em cards.
