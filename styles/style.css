@@ -859,6 +859,21 @@ footer>p {
         }
 
     }
+
+    .technical-knowledge-container,
+    .interests-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .interests-container .card{        
+        font-size: var(--small);
+        color: var(--secondary-text-color);
+        
+        display: flex;
+        gap: 0.5rem;
+    }
 }
 
 .availability-dot {
@@ -869,4 +884,25 @@ footer>p {
     border-radius: 50%;
 
     box-shadow: 0 0 6px oklch(72.3% 0.192 149.6 / 0.5);
+}
+
+.section-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    .divider {
+        flex: 1;
+    }
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25ch, calc(20% - 40px - 1rem)));
+    justify-content: center;
+    gap: 1rem;
+}
+
+.soft-hover:hover {
+    border: 2px solid var(--primary-accent-color);
 }
