@@ -109,7 +109,6 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    gap: 20px;
 }
 
 header {
@@ -345,7 +344,7 @@ footer>p {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
     justify-items: center;
-    row-gap: 20px;
+    row-gap: 24px;
 }
 
 .main-title {
@@ -740,4 +739,28 @@ footer>p {
   .article-img img {
     height: 220px;
   }
+}
+
+.about {
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    gap: 24px;
+
+    section {
+        padding: 20px 40px;
+    }
+    
+    .about-presentation {
+        border-bottom: 1px solid var(--borders-color);
+
+        h2 {
+            font-size: var(--large);
+        }
+
+        p {
+            color: var(--secondary-text-color);
+
+            font-size: var(--small);
+        }
+    }
 }
