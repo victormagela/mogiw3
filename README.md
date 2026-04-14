@@ -51,3 +51,4 @@ Projeto para faculdade, desenvolvimento de um website para a empresa fícticia, 
 - Seção Hero desta página contém: foto do desenvolvedor, nome, stack, breve descrição, um badge indicando disponibilidade para projetos, e links para GitHub e LinkedIn.
 - Aplica media querie que transforma o Grid Layout em um Flexbox para telas menores que 860 pixels, e manipula a ordem de cada elementos para melhor posicionamento no novo layout.
 - Cria CSS Grid para as seções de conhecimentos técnicos e Interesses da página; o conteúdo destas é separado em cards.
+- Para os cards de conhecimento técnico, implementa uma barra que é parcial ou totalmente preenchida de acordo com o nível de conhecimento do desenvolvedor com aquela tecnologia. Para isto utiliza dois divs généricos com altura baixa, o primeiro representa a barra, e o segundo representa o quanto a barra é preenchida.
