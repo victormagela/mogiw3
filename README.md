@@ -45,3 +45,8 @@ Projeto para faculdade, desenvolvimento de um website para a empresa fícticia, 
 - Os links disfarçados de botões seguem o mesmo padrão de gradiente animado do restante do website.
 - Inseri os artigo em cards semelhantes aos presentes em páginas anteriores, porém estes não possuem nenhum efeito hover.
 - Utilizei media queries, flexbox e grid para melhorar a responsividade da página.
+
+# Página Sobre
+- Utiliza grid na seção principal da página para o layout. Código CSS utilizando técnica de aninhamento para melhor organização.
+- Seção Hero desta página contém: foto do desenvolvedor, nome, stack, breve descrição, um badge indicando disponibilidade para projetos, e links para GitHub e LinkedIn.
+- Aplica media querie que transforma o Grid Layout em um Flexbox para telas menores que 860 pixels, e manipula a ordem de cada elementos para melhor posicionamento no novo layout.
