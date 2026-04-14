@@ -867,6 +867,12 @@ footer>p {
         gap: 10px;
     }
 
+    .technical-knowledge-container .card {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
     .interests-container .card{        
         font-size: var(--small);
         color: var(--secondary-text-color);
@@ -905,4 +911,19 @@ footer>p {
 
 .soft-hover:hover {
     border: 2px solid var(--primary-accent-color);
+}
+
+.skill-level {
+    height: 3px;
+    background-color: var(--background-color);
+}
+
+.skill-level-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-accent-color));
+}
+
+.label {
+    font-size: var(--small);
+    color: var(--secondary-text-color);
 }
