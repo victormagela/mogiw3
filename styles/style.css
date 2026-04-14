@@ -763,4 +763,110 @@ footer>p {
             font-size: var(--small);
         }
     }
+
+    .dev-info-container {
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+        grid-template-rows: repeat(3, auto);
+        gap: 24px;
+
+        .dev-img {
+            grid-column: 1 / span 1;
+            grid-row: 1 / span 2;
+
+            img {
+                width: 100%;
+
+                border: 1px solid var(--borders-color);
+                border-radius: 50%;
+            }
+        }
+
+        .card {
+            grid-column: 1 / span 1;
+            grid-row: 3 / span 1;
+
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            font-size: var(--small);
+        }
+
+        .dev-info-header {
+            grid-column: 2 / span 1;
+            grid-row: 1 / span 1;
+
+            align-self: end;
+
+            h3 {
+                font-size: var(--large);
+            }
+
+            h4 {
+                font-size: var(--small);
+                color: var(--primary-accent-color);
+            }
+        }
+
+        .dev-description {
+            color: var(--secondary-text-color);
+        }
+
+        nav .dev-links {
+            display: flex;
+            gap: 10px;
+
+            font-size: var(--small);
+            color: var(--secondary-text-color);
+        }
+
+    }
+
+    @media (max-width: 860px) {
+        .dev-info-container {
+            display: flex;
+            flex-direction: column;
+
+            .dev-img {
+                order: 0;
+                align-self: center;
+            }
+            
+            .dev-img img {
+                height: 360px;
+            }
+    
+            .dev-info-header {
+                order: 1;
+                align-self: flex-start;
+            }
+
+            .dev-description {
+                max-width: 100%;
+                order: 2;
+            }
+
+            .card {
+                order: 3;
+                align-self: flex-start;
+            }
+
+            nav {
+                order: 4;
+                align-self: flex-start;
+            }
+        }
+
+    }
+}
+
+.availability-dot {
+    height: 0.5rem;
+    width: 0.5rem;
+
+    background-color: oklch(72.3% 0.192 149.6);
+    border-radius: 50%;
+
+    box-shadow: 0 0 6px oklch(72.3% 0.192 149.6 / 0.5);
 }
